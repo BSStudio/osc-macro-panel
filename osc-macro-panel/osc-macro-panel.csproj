@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>osc_macro_panel</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <StartupObject>osc_macro_panel.Program</StartupObject>
+    <Authors>Komlós Boldizsár</Authors>
+    <Company>Komlós Boldizsár &lt;komlos.boldizsar@gmail.com&gt;</Company>
+    <Product>OSC Macro Panel</Product>
+    <PackageId>osc-macro-panel</PackageId>
+    <AssemblyName>OSC Macro Panel</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bespoke.Common" Version="1.0.0" />
+    <PackageReference Include="Bespoke.Osc" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
